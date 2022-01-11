@@ -3,10 +3,7 @@
   margin: 0;
   padding: 0;
   outline: none;
-  font-family: "Public Sans", sans-serif;
-}
-html {
-  font-size: 62.5%;
+  font-family: "Public-Snas", sans-serif;
 }
 body {
   display: flex;
@@ -15,24 +12,22 @@ body {
   min-height: 100vh;
   overflow: hidden;
   background-color: #131429;
-  background-size: 100%;
 }
 ::selection {
   color: #fff;
-  background: #d43f8d;
+  background: gainsboro;
 }
 .container {
-  max-width: 70rem;
-  width: 36rem;
+  width: 450px;
   background: #fff;
   text-align: center;
-  border-radius: 1rem;
-  padding: 5rem 3.5rem 1rem 3.5rem;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
 }
 .container header {
-  font-size: 4rem;
-  font-weight: 60;
-  margin: 0 0 3rem 0;
+  font-size: 42px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
 }
 .container .form-outer {
   width: 100%;
@@ -48,48 +43,47 @@ body {
 }
 .form-outer form .page .title {
   text-align: left;
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: bolder;
 }
 .form-outer form .page .field {
-  width: 33rem;
-  height: 4.5rem;
-  margin: 4.5rem 0;
+  width: 330px;
+  height: 45px;
+  margin: 50px;
   display: flex;
   position: relative;
 }
 form .page .field .label {
-  font-size: 1.8rem;
   position: absolute;
-  top: -2.5rem;
+  top: -35px;
   font-weight: 500;
 }
 form .page .field input {
   height: 100%;
   width: 100%;
-  border: 0.1rem solid lightgrey;
-  border-radius: 0.5rem;
-  padding-left: 1.5rem;
-  font-size: 1.5rem;
+  border: 1px solid #131429;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 16px;
 }
 form .page .field select {
   width: 100%;
-  padding-left: 1rem;
-  font-size: 1.7rem;
+  padding-left: 10px;
+  font-size: 17px;
   font-weight: 500;
 }
 form .page .field button {
   width: 100%;
-  height: calc(100% + 0.5rem);
+  height: calc(100% + 5px);
   border: none;
   background: #52535c;
-  margin-top: -2rem;
-  border-radius: 0.5rem;
+  margin-top: -20px;
+  border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: 500;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.5s ease;
 }
@@ -97,42 +91,42 @@ form .page .field button:hover {
   background: #099e00;
 }
 form .page .btns button {
-  margin-top: -2rem !important;
+  margin-top: -20px !important;
 }
 form .page .btns button.prev {
-  margin-right: 0.3rem;
-  font-size: 1.7rem;
+  margin-right: 3px;
+  font-size: 17px;
 }
 form .page .btns button.next {
-  margin-left: 0.3rem;
+  margin-left: 3px;
 }
 .container .progress-bar {
   display: flex;
-  margin: 4rem 0;
+  margin: 40px 0;
   user-select: none;
 }
 .container .progress-bar .step {
   text-align: center;
-  width: 100%;
+  width: 200%;
   position: relative;
 }
 .container .progress-bar .step p {
   font-weight: 500;
-  font-size: 1.8rem;
-  color: #52535c;
-  margin-bottom: 0.8rem;
+  font-size: 20px;
+  color: #131429;
+  margin-bottom: 8px;
 }
 .progress-bar .step .bullet {
-  height: 2.5rem;
-  width: 2.5rem;
-  border: 0.2rem solid #52535c;
+  height: 25px;
+  width: 25px;
+  border: 2px solid #131429;
   display: inline-block;
   border-radius: 50%;
   position: relative;
   transition: 0.2s;
   font-weight: 500;
-  font-size: 1.7rem;
-  line-height: 2.5rem;
+  font-size: 17px;
+  line-height: 25px;
 }
 .progress-bar .step .bullet.active {
   border-color: #099e00;
@@ -150,11 +144,11 @@ form .page .btns button.next {
 .progress-bar .step .bullet:after {
   position: absolute;
   content: "";
-  bottom: 1.1rem;
-  right: -5.5rem;
-  height: 0.3rem;
-  width: 4.6rem;
-  background: #52535c;
+  bottom: 11px;
+  right: -81px;
+  height: 3px;
+  width: 74px;
+  background: #262626;
 }
 .progress-bar .step .bullet.active:after {
   background: #099e00;
@@ -179,7 +173,7 @@ form .page .btns button.next {
   position: absolute;
   left: 50%;
   top: 70%;
-  font-size: 1.5rem;
+  font-size: 15px;
   transform: translate(-50%, -50%);
   display: none;
 }
@@ -188,9 +182,17 @@ form .page .btns button.next {
   color: #fff;
 }
 
-@media (max-width: 998px) {
-  html {
-    font-size: 60%;
-    width: 100%;
+@media screen and (max-width: 851px) {
+  .bullet.active {
+    font-size: xx-large;
+  }
+  .container {
+    width: 450px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 50px 35px 10px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
